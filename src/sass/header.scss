@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  background-color: #0E1014;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    margin-right: 12px;
+  }
+
+  &__link {
+    // font-family: 'Montserrat', sans-serif;
+    // font-weight: 500;
+    // font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

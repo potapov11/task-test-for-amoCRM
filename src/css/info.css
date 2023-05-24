@@ -1,0 +1,52 @@
+.info {
+  margin: -6px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: #0E1014;
+  color: #E4E5EA;
+}
+.info__title {
+  text-transform: uppercase;
+  color: #656566;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+.info__list, .info__adress {
+  list-style: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.info__company-text, .info__menu-text, .info__contacts-text {
+  margin-bottom: 24px;
+}
+.info__company-item, .info__menu-item {
+  margin-bottom: 17px;
+}
+.info__company-link, .info__menu-link {
+  text-decoration: none;
+  color: #E4E5EA;
+}
+.info__menu-group {
+  display: flex;
+}
+.info__contacts-tel {
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E4E5EA;
+}
+.info__contacts-icons {
+  margin-bottom: 10px;
+  color: #E4E5EA;
+}

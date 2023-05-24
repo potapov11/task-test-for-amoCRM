@@ -1,0 +1,17 @@
+.footer {
+  padding-bottom: 60px;
+  background-color: #0E1014;
+  color: #E4E5EA;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer__text {
+  line-height: 15px;
+}
+.footer__link-text {
+  line-height: 15px;
+  color: #E4E5EA;
+  text-decoration-line: underline;
+}
