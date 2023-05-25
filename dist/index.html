@@ -11,33 +11,64 @@
 <body class="body">
   <header class="header">
     <div class="container">
-      <ul class="header__list">
-        <li class="header__item">
-          <a class='header__link'href="#">Услуги</a>
-        </li>
-        <li class="header__item">
-          <a class='header__link'href="#">Виджеты</a>
-        </li>
-        <li class="header__item">
-          <a class='header__link'href="#">Интеграции</a>
-        </li>
-        <li class="header__item">
-          <a class='header__link'href="#">Кейсы</a>
-        </li>
-      </ul>
+      <div class="header__group">
+        <div class="header__logo elem-hidden--flex">
+          <img class='header__logo-img header__logo-img--smallimg' src="img/small-logo.png" alt="Лого фирмы">
+          <img class='header__logo-img header__logo-img--bigimg' src="img/big-logo.png" alt="Лого фирмы">
+        </div>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class='header__link'href="#">Услуги</a>
+          </li>
+          <li class="header__item">
+            <a class='header__link'href="#">Виджеты</a>
+          </li>
+          <li class="header__item">
+            <a class='header__link'href="#">Интеграции</a>
+          </li>
+          <li class="header__item">
+            <a class='header__link'href="#">Кейсы</a>
+          </li>
+          <li class="header__item elem-hidden">
+            <a class='header__link'href="#">Сертификаты</a>
+          </li>
+        </ul>
+  
+        <div class="header__contacts elem-hidden--flex">
+          <a class="header__contacts-tel" href="tel:+75555555555">+7 555 555-55-55</a>
+          <div class="header__contacts-icons">
+            <a class="header__contacts-icon-telegram" href="#">
+              <img src="img/telegram.png" alt="Иконка телеграм" class="header__contacts-img-telegram">
+            </a>
+            <a class="header__contacts-icon-tel" href="#">
+              <img src="img/phone.png" alt="Иконка телефон" class="header__contacts-img-tel">
+            </a>
+            <a class="header__contacts-icon-watsap" href="#">
+              <img src="img/watsapp.png" alt="Иконка ватсам" class="header__contacts-img-watsap">
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </header>
   <section class="promo">
     <div class="container">
-      <h2 class="promo__title">Зарабатывайте больше <span class="promo__inner-text">с WELBEX</span></h2>
-      <p class="promo__text">Развиваем и контролируем продажи за вас</p>
-      <p class="promo__text-present">Вместе с <span class="promo__inner-present">бесплатной консультацией</span> мы дарим:</p>
-      <ul class="promo__list">
-        <li class="promo__item">Skype аудит</li>
-        <li class="promo__item">30 виджетов</li>
-        <li class="promo__item">Dashboard</li>
-        <li class="promo__item">Месяц аmoCRM</li>
-      </ul>
+      <div class="promo__groups">
+        <div class="promo__group-content-text">
+          <h2 class="promo__title">Зарабатывайте больше <span class="promo__inner-text">с WELBEX</span></h2>
+          <p class="promo__text">Развиваем и контролируем продажи за вас</p>
+        </div>
+        <div class="promo__group-present-content">
+          <p class="promo__text-present">Вместе с <span class="promo__inner-present">бесплатной консультацией</span> мы дарим:</p>
+          <ul class="promo__list">
+            <li class="promo__item">Skype аудит</li>
+            <li class="promo__item">30 виджетов</li>
+            <li class="promo__item">Dashboard</li>
+            <li class="promo__item">Месяц аmoCRM</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
   <section class='info'>

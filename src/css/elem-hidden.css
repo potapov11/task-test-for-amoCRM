@@ -1,0 +1,19 @@
+.elem-hidden {
+  display: none;
+}
+
+.elem-hidden--flex {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .elem-hidden {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .elem-hidden--flex {
+    display: flex;
+    align-items: center;
+  }
+}

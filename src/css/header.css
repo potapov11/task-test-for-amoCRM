@@ -20,3 +20,56 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+@media (min-width: 769px) {
+  .header__contacts {
+    display: flex;
+    align-items: center;
+  }
+  .header__contacts-tel {
+    display: block;
+    margin-right: 47px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+  }
+  .header__group {
+    display: flex;
+    align-items: center;
+  }
+  .header__logo-img--smallimg {
+    width: 35px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .header__logo-img--bigimg {
+    width: 97px;
+    height: 15px;
+  }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 52px;
+  }
+  .header__list {
+    margin-right: 137px;
+  }
+  .header__contacts-icon-telegram, .header__contacts-icon-tel {
+    margin-right: 30px;
+  }
+  .header__item {
+    margin-right: 30px;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .header {
+    background-color: black;
+  }
+}

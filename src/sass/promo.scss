@@ -1,5 +1,4 @@
 .promo {
-  width: 100%;
   margin: 0 auto;
   margin-top: -6px;
   padding-top: 45px;
@@ -8,6 +7,7 @@
   background-image: url('../img/mob-bg.png');
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 
   &__title {
     margin-bottom: 25px;
@@ -59,6 +59,7 @@
     position: relative;
     width: 50%;
     padding-left: 16px;
+    margin-bottom: 14px;
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-style: normal;

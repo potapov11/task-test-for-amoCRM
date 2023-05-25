@@ -1,5 +1,5 @@
 .info {
-  margin: -6px;
+  margin-top: -6px;
   padding-top: 45px;
   padding-bottom: 50px;
   background-color: #0E1014;
@@ -34,6 +34,10 @@
 }
 .info__menu-group {
   display: flex;
+  margin-bottom: 30px;
+}
+.info__company {
+  margin-bottom: 30px;
 }
 .info__contacts-tel {
   display: block;
@@ -47,6 +51,19 @@
   color: #E4E5EA;
 }
 .info__contacts-icons {
+  display: flex;
   margin-bottom: 10px;
   color: #E4E5EA;
+}
+.info__contacts-icons a {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.info__contacts-icon-telegram, .info__contacts-icon-tel {
+  margin-right: 10px;
+}
+.info__contacts-icons img {
+  width: 20px;
+  height: 18px;
 }

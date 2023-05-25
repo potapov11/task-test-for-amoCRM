@@ -18,11 +18,70 @@
   }
 
   &__link {
-    // font-family: 'Montserrat', sans-serif;
-    // font-weight: 500;
-    // font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  @media (min-width: 769px) {
+    &__contacts {
+      display: flex;
+      align-items: center;
+    }
+
+    &__contacts-tel {
+      display: block;
+      margin-right: 47px;
+      text-decoration: none;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #E4E5EA;
+    }
+
+    &__group {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo-img--smallimg {
+      width: 35px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    &__logo-img--bigimg {
+      width: 97px;
+      height: 15px;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      margin-right: 52px;
+    }
+
+    &__list {
+      margin-right: 137px;
+    }
+
+    &__contacts-icon-telegram, &__contacts-icon-tel {
+      margin-right: 30px;
+    }
+
+    &__item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .header {
+    background-color: black;
   }
 }
