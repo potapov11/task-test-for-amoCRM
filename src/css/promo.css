@@ -70,3 +70,100 @@
   height: 2px;
   background-image: url(../img/mob-line.png);
 }
+@media (min-width: 1174px) {
+  .promo__groups {
+    display: flex;
+    justify-content: space-between;
+  }
+  .promo__group-content-text {
+    width: 322px;
+  }
+  .promo__title {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .promo__inner-text {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .promo__group-present-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .promo__item {
+    width: 34%;
+    text-align: right;
+  }
+  .promo__item::before {
+    display: none;
+  }
+  .promo__list {
+    display: none;
+    justify-content: end;
+  }
+  .promo__list-desktop {
+    width: 300px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-family: "Inter";
+    font-style: normal;
+  }
+  .promo__item-desktop {
+    width: 150px;
+    margin-bottom: 35px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .promo__item-desktop-text {
+    margin-top: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: lowercase;
+  }
+  .promo__text-present {
+    width: 291px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+  }
+  .promo__inner-present {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .promo__btn {
+    width: 262px;
+    height: 61px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    background-color: #4077F3;
+    border: none;
+  }
+}
+
+@media (min-width: 1174px) {
+  .group-div {
+    background-image: url("../img/desk-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: -1px;
+  }
+  .promo {
+    background-image: none;
+  }
+}

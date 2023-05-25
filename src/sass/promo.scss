@@ -77,5 +77,118 @@
     height: 2px;
     background-image: url(../img/mob-line.png);
   }
+
+  @media(min-width: 1174px) {
+    &__groups {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__group-content-text {
+      width: 322px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    &__inner-text {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    &__group-present-content {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+
+    &__item {
+      width: 34%;
+      text-align: right;
+    }
+
+    &__item::before {
+      display: none;
+    }
+
+    &__list {
+      display: none;
+      justify-content: end;;
+    }
+
+    &__list-desktop {
+      width: 300px;
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      font-family: 'Inter';
+      font-style: normal;
+    }
+
+    &__item-desktop {
+      width: 150px;
+      margin-bottom: 35px;
+      text-align: right;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+
+    &__item-desktop-text{
+      margin-top: 10px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: lowercase;
+    }
+
+    &__text-present {
+      width: 291px;
+      text-align: right;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+    }
+
+    &__inner-present {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+
+    &__btn {
+      width: 262px;
+      height: 61px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #E4E5EA;
+      background-color: #4077F3;
+      border: none;
+    }
+  }
 }
+
+@media(min-width: 1174px){
+  .group-div {
+    background-image: url('../img/desk-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: -1px;
+  }
+
+  .promo {
+    background-image: none;
+  }
+}
+
 

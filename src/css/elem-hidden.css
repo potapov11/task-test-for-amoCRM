@@ -6,12 +6,12 @@
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1174px) {
   .elem-hidden {
     display: block;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1174px) {
   .elem-hidden--flex {
     display: flex;
     align-items: center;
