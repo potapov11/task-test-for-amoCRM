@@ -1,5 +1,3 @@
-var gulp = require("gulp");
-// var deploy = require("gulp-gh-pages");
 const { src, dest, parallel, series, watch } = require("gulp");
 const browserSync = require("browser-sync").create();
 const concat = require("gulp-concat");
@@ -18,6 +16,10 @@ const notify = require("gulp-notify");
 const sourcemaps = require("gulp-sourcemaps");
 const argv = require("yargs").argv;
 const gulpif = require("gulp-if");
+const { src, task } = require("gulp");
+const ghPages = require("gulp-gh-pages");
+
+task("deploy", () => src("./dist/**/*").pipe(ghPages()));
 // const webp                                  = require('gulp-webp')
 
 gulp.task("deploy", function () {
