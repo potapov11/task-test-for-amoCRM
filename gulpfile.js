@@ -1,5 +1,5 @@
 var gulp = require("gulp");
-var deploy = require("gulp-gh-pages");
+// var deploy = require("gulp-gh-pages");
 const { src, dest, parallel, series, watch } = require("gulp");
 const browserSync = require("browser-sync").create();
 const concat = require("gulp-concat");
@@ -19,6 +19,10 @@ const sourcemaps = require("gulp-sourcemaps");
 const argv = require("yargs").argv;
 const gulpif = require("gulp-if");
 // const webp                                  = require('gulp-webp')
+
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
 
 function htmlMinify() {
   return src("src/*.html")
@@ -60,10 +64,6 @@ function scripts() {
     .pipe(dest("dist/js"))
     .pipe(gulpif(argv.development, browserSync.stream()));
 }
-
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
-});
 
 function imgs() {
   return (
