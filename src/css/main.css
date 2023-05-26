@@ -364,6 +364,9 @@
   display: flex;
   margin-bottom: 19px;
 }
+.info__contacts {
+  margin-bottom: 50px;
+}
 .info__company {
   margin-bottom: 30px;
 }
