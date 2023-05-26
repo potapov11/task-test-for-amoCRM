@@ -1,7 +1,7 @@
 .info {
   margin-top: -6px;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 82px;
+  padding-bottom: 5px;
   background-color: #0E1014;
   color: #E4E5EA;
 }
@@ -23,10 +23,13 @@
   line-height: 17px;
 }
 .info__company-text, .info__menu-text, .info__contacts-text {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 .info__company-item, .info__menu-item {
-  margin-bottom: 17px;
+  margin-bottom: 10px;
+}
+.info__menu-item {
+  margin-bottom: 10px;
 }
 .info__company-link, .info__menu-link {
   text-decoration: none;
@@ -34,7 +37,7 @@
 }
 .info__menu-group {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 .info__company {
   margin-bottom: 30px;
@@ -52,6 +55,7 @@
 }
 .info__contacts-icons {
   display: flex;
+  padding-left: 7px;
   margin-bottom: 10px;
   color: #E4E5EA;
 }
@@ -66,4 +70,42 @@
 .info__contacts-icons img {
   width: 20px;
   height: 18px;
+}
+@media (min-width: 1174px) {
+  .info__group {
+    display: flex;
+  }
+  .info__company {
+    margin-right: 92px;
+  }
+  .info__title {
+    font-size: 14px;
+  }
+  .info__menu {
+    margin-right: 163px;
+  }
+  .info__contacts {
+    margin-left: auto;
+    text-align: right;
+  }
+  .info__contacts-icons {
+    justify-content: end;
+  }
+  .info__list, .info__adress {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .info__company-text, .info__menu-text, .info__contacts-text {
+    margin-bottom: 20px;
+  }
+  .info__contacts-tel, .info__contacts-icons {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 1174px) {
+  .info {
+    background-color: transparent;
+    color: #E4E5EA;
+  }
 }

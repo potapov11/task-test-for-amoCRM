@@ -15,3 +15,18 @@
   color: #E4E5EA;
   text-decoration-line: underline;
 }
+@media (min-width: 1174px) {
+  .footer__text, .footer__subtext {
+    text-align: right;
+  }
+  .footer__subtext {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 1174px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}

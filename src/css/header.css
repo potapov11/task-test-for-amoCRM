@@ -21,6 +21,11 @@
   color: #ffffff;
 }
 @media (min-width: 1174px) {
+  .header__link {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+  }
   .header__contacts {
     display: flex;
     align-items: center;
@@ -59,6 +64,7 @@
   }
   .header__contacts-icon-telegram, .header__contacts-icon-tel {
     margin-right: 30px;
+    text-decoration: none;
   }
   .header__item {
     margin-right: 30px;
@@ -71,7 +77,7 @@
 @media (min-width: 1174px) {
   .header {
     background-color: transparent;
-    margin-bottom: 141px;
+    margin-bottom: 75px;
   }
   .header__group {
     position: relative;

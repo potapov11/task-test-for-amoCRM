@@ -2,7 +2,7 @@
   margin: 0 auto;
   margin-top: -6px;
   padding-top: 45px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   color: #E4E5EA;
   background-image: url("../img/mob-bg.png");
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   background-size: cover;
 }
 .promo__title {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -23,7 +23,7 @@
   background-clip: text;
 }
 .promo__text {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
   line-height: 22px;
 }
 .promo__text-present {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -51,15 +51,24 @@
 }
 .promo__item {
   position: relative;
-  width: 50%;
+  width: 47%;
   padding-left: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   text-transform: uppercase;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+}
+.promo__item--skype {
+  width: 43%;
+}
+.promo__item--dashboard {
+  width: 43%;
+}
+.promo__item--crm {
+  width: 47%;
 }
 .promo__item::before {
   content: "";
@@ -90,6 +99,7 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-top: 14px;
   }
   .promo__item {
     width: 34%;
@@ -105,6 +115,7 @@
   .promo__list-desktop {
     width: 300px;
     display: flex;
+    margin-bottom: 32px;
     list-style: none;
     flex-wrap: wrap;
     font-family: "Inter";
@@ -112,7 +123,7 @@
   }
   .promo__item-desktop {
     width: 150px;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
     text-align: right;
     font-size: 18px;
     line-height: 22px;
@@ -129,12 +140,18 @@
   }
   .promo__text-present {
     width: 291px;
+    margin-right: 5px;
+    margin-bottom: 40px;
     text-align: right;
     font-size: 18px;
     line-height: 22px;
     text-align: right;
   }
   .promo__inner-present {
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -152,11 +169,24 @@
     color: #E4E5EA;
     background-color: #4077F3;
     border: none;
+    cursor: pointer;
+  }
+  .promo__item-desktop--widget {
+    width: 132px;
+    margin-right: 14px;
+  }
+  .promo__item-desktop--skype {
+    text-align: left;
+    padding-left: 7px;
+  }
+  .promo__crm {
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 1174px) {
   .group-div {
+    padding-top: 55px;
     background-image: url("../img/desk-bg.png");
     background-repeat: no-repeat;
     background-position: center center;

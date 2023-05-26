@@ -1,7 +1,7 @@
 .info {
   margin-top: -6px;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 82px;
+  padding-bottom: 5px;
   background-color: #0E1014;
   color: #E4E5EA;
 
@@ -25,12 +25,16 @@
   }
 
   &__company-text, &__menu-text, &__contacts-text {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 
   &__company-item, &__menu-item {
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
+
+  &__menu-item {
+    margin-bottom: 10px;
+}
 
   &__company-link, &__menu-link {
     text-decoration: none;
@@ -39,7 +43,7 @@
 
   &__menu-group {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 
   &__company {
@@ -60,6 +64,7 @@
 
   &__contacts-icons {
     display: flex;
+    padding-left: 7px;
     margin-bottom: 10px;
     color: #E4E5EA;
   }
@@ -78,6 +83,50 @@
     width: 20px;
     height: 18px;
   }
+
+  @media (min-width: 1174px) {
+    &__group {
+      display: flex;
+    }
+
+    &__company {
+      margin-right: 92px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+    &__menu {
+      margin-right: 163px;
+    }
+
+    &__contacts {
+      margin-left: auto;
+      text-align: right;
+    }
+
+    &__contacts-icons {
+      justify-content: end;
+    }
+
+    &__list, &__adress {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__company-text, &__menu-text, &__contacts-text {
+      margin-bottom: 20px;
+    }
+
+    &__contacts-tel, &__contacts-icons {
+      margin-bottom: 21px;
+    }
+  }
 }
 
-
+@media (min-width: 1174px) {
+  .info {
+    background-color: transparent;
+    color: #E4E5EA;
+  }
+}

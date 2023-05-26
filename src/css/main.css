@@ -40,6 +40,11 @@
   color: #ffffff;
 }
 @media (min-width: 1174px) {
+  .header__link {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+  }
   .header__contacts {
     display: flex;
     align-items: center;
@@ -78,6 +83,7 @@
   }
   .header__contacts-icon-telegram, .header__contacts-icon-tel {
     margin-right: 30px;
+    text-decoration: none;
   }
   .header__item {
     margin-right: 30px;
@@ -90,7 +96,7 @@
 @media (min-width: 1174px) {
   .header {
     background-color: transparent;
-    margin-bottom: 141px;
+    margin-bottom: 75px;
   }
   .header__group {
     position: relative;
@@ -122,7 +128,7 @@
   margin: 0 auto;
   margin-top: -6px;
   padding-top: 45px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   color: #E4E5EA;
   background-image: url("../img/mob-bg.png");
   background-repeat: no-repeat;
@@ -130,7 +136,7 @@
   background-size: cover;
 }
 .promo__title {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -143,7 +149,7 @@
   background-clip: text;
 }
 .promo__text {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -151,7 +157,7 @@
   line-height: 22px;
 }
 .promo__text-present {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -171,15 +177,24 @@
 }
 .promo__item {
   position: relative;
-  width: 50%;
+  width: 47%;
   padding-left: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   text-transform: uppercase;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+}
+.promo__item--skype {
+  width: 43%;
+}
+.promo__item--dashboard {
+  width: 43%;
+}
+.promo__item--crm {
+  width: 47%;
 }
 .promo__item::before {
   content: "";
@@ -210,6 +225,7 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-top: 14px;
   }
   .promo__item {
     width: 34%;
@@ -225,6 +241,7 @@
   .promo__list-desktop {
     width: 300px;
     display: flex;
+    margin-bottom: 32px;
     list-style: none;
     flex-wrap: wrap;
     font-family: "Inter";
@@ -232,7 +249,7 @@
   }
   .promo__item-desktop {
     width: 150px;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
     text-align: right;
     font-size: 18px;
     line-height: 22px;
@@ -249,12 +266,18 @@
   }
   .promo__text-present {
     width: 291px;
+    margin-right: 5px;
+    margin-bottom: 40px;
     text-align: right;
     font-size: 18px;
     line-height: 22px;
     text-align: right;
   }
   .promo__inner-present {
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -272,11 +295,24 @@
     color: #E4E5EA;
     background-color: #4077F3;
     border: none;
+    cursor: pointer;
+  }
+  .promo__item-desktop--widget {
+    width: 132px;
+    margin-right: 14px;
+  }
+  .promo__item-desktop--skype {
+    text-align: left;
+    padding-left: 7px;
+  }
+  .promo__crm {
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 1174px) {
   .group-div {
+    padding-top: 55px;
     background-image: url("../img/desk-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -289,8 +325,8 @@
 }
 .info {
   margin-top: -6px;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 82px;
+  padding-bottom: 5px;
   background-color: #0E1014;
   color: #E4E5EA;
 }
@@ -312,10 +348,13 @@
   line-height: 17px;
 }
 .info__company-text, .info__menu-text, .info__contacts-text {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 .info__company-item, .info__menu-item {
-  margin-bottom: 17px;
+  margin-bottom: 10px;
+}
+.info__menu-item {
+  margin-bottom: 10px;
 }
 .info__company-link, .info__menu-link {
   text-decoration: none;
@@ -323,7 +362,7 @@
 }
 .info__menu-group {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 .info__company {
   margin-bottom: 30px;
@@ -341,6 +380,7 @@
 }
 .info__contacts-icons {
   display: flex;
+  padding-left: 7px;
   margin-bottom: 10px;
   color: #E4E5EA;
 }
@@ -356,8 +396,49 @@
   width: 20px;
   height: 18px;
 }
+@media (min-width: 1174px) {
+  .info__group {
+    display: flex;
+  }
+  .info__company {
+    margin-right: 92px;
+  }
+  .info__title {
+    font-size: 14px;
+  }
+  .info__menu {
+    margin-right: 163px;
+  }
+  .info__contacts {
+    margin-left: auto;
+    text-align: right;
+  }
+  .info__contacts-icons {
+    justify-content: end;
+  }
+  .info__list, .info__adress {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .info__company-text, .info__menu-text, .info__contacts-text {
+    margin-bottom: 20px;
+  }
+  .info__contacts-tel, .info__contacts-icons {
+    margin-bottom: 21px;
+  }
+}
 
+@media (min-width: 1174px) {
+  .info {
+    background-color: transparent;
+    color: #E4E5EA;
+  }
+}
 .elem-hidden {
+  display: none;
+}
+
+.elem-hidden-desk {
   display: none;
 }
 
@@ -374,5 +455,17 @@
   .elem-hidden--flex {
     display: flex;
     align-items: center;
+  }
+}
+.menu-list--left {
+  margin-right: 47px;
+}
+
+@media (min-width: 1174px) {
+  .menu-list--left {
+    margin-right: 52px;
+  }
+  .menu-list--right {
+    margin-top: -7px;
   }
 }

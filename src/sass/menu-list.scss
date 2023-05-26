@@ -1,0 +1,13 @@
+.menu-list--left {
+  margin-right: 47px;
+}
+
+@media (min-width: 1174px) {
+  .menu-list--left {
+    margin-right: 52px;
+  }
+
+  .menu-list--right {
+    margin-top: -7px;;
+  }
+}

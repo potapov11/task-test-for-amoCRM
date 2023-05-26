@@ -2,6 +2,10 @@
   display: none;
 }
 
+.elem-hidden-desk {
+  display: none;
+}
+
 .elem-hidden--flex {
   display: none;
 }

@@ -24,6 +24,12 @@
   }
 
   @media (min-width: 1174px) {
+    &__link {
+      text-decoration: none;
+      text-transform: none;
+      font-size: 16px;
+    }
+
     &__contacts {
       display: flex;
       align-items: center;
@@ -69,6 +75,7 @@
 
     &__contacts-icon-telegram, &__contacts-icon-tel {
       margin-right: 30px;
+      text-decoration: none;
     }
 
     &__item {
@@ -83,7 +90,7 @@
 @media (min-width: 1174px) {
   .header {
     background-color: transparent;
-    margin-bottom: 141px;
+    margin-bottom: 75px;
   }
 
   .header__group{
