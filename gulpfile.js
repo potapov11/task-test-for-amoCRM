@@ -16,15 +16,6 @@ const notify = require("gulp-notify");
 const sourcemaps = require("gulp-sourcemaps");
 const argv = require("yargs").argv;
 const gulpif = require("gulp-if");
-const { src, task } = require("gulp");
-const ghPages = require("gulp-gh-pages");
-
-task("deploy", () => src("./dist/**/*").pipe(ghPages()));
-// const webp                                  = require('gulp-webp')
-
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
-});
 
 function htmlMinify() {
   return src("src/*.html")
